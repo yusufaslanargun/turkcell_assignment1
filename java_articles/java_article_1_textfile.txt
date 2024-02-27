@@ -1,0 +1,13 @@
+Java’da Deðer Ve Referans Tipleri
+
+Java'da 2 temel veri tipi vardýr. Deðer(Primitive) ve Referans(Non-Primitive) veri tipleri. Bu veri tipleri bellekte nasýl saklandýklarý ve nasýl iþlediklerine göre birbirlerinden ayrýlýrlar.
+
+Deðer veri tipleri, bellekte doðrudan olarak saklanýr ve direkt olarak verinin deðerini içerir. Bir deðer tipine bir deðer atandýðý zaman, bellekte yeni bir kopya oluþturulup deðer o kopyanýn içinde yine doðrudan saklanýr. Yani atanan ile atanýlanlar arasýnda bir iliþki olmaz, biri diðerinin kopyasý olur sadece. Boolean, character, integer, float veri tipleri ve bunlarýn baðýmlý türleri deðer veri tipleridir.
+
+Varsayalým ki tam sayý saklamak için bir integer ‘a’ deðiþkeni tanýmladýk, daha sonra da bir integer ‘b’ deðiþkeni tanýmlayýp a deðerini b deðerine atarsak, ikisi birbirinden baðýmsýz, ayný deðeri içeren 2 farklý deðiþken olacaktýr. Daha sonra a üzerinde b’den baðýmsýz veya b üzerinde a’dan baðýmsýz iþlemler yapabiliriz, bu diðerini etkilemez.
+
+Referans veri tipleri, bellekte doðrudan saklanmak yerine, bellekteki bir nesnenin adresini saklar. Yani referans veri tipi içinde bulunan adres programý ilgili nesneye yönlendirir. Bir referans tipi deðiþkeni, baþka bir referans tipi deðiþkene atandýðý zaman, bir deðiþken diðerine kendindeki adresi kopyalayýp verir, yani ikinci deðiþken de ayný adresi saklýyor olur, yani ikisi de ayný nesneyi iþaret eder. Array(dizi), class(sýnýf), interface, string, enum veri tipleri referans veri tipleridir.
+
+Yine ayný varsayýmý yaparsak, integer deðerler saklayan bir ‘a’ dizisi tanýmladýk ve içine integer sayýlar doldurduk. Sonrasýnda yine integer deðer saklayan bir ‘b’ dizisi tanýmlayýp, a dizisini b dizisine atarsak, a deðiþkeni dizinin referansýný tuttuðu için b deðiþkenine de referansý kopyalayacaktýr, yani aslýnda isimleri farklý olsa bile bellekteki ayný diziyi temsil ediyo olacaklar ikisi de. Biz bu hamleden sonra b dizisi üzerinde deðiþiklik yaparsak, bu a’nýn da iþaret ettiði diziyi deðiþtireceði için a dizisi de deðiþecektir.
+
+Java’da deðer ve referans veri tipleri arasýndaki temel farklar bunlardýr.
